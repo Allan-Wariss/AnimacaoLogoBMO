@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --size-border: 2.5rem;
+    --color-square: #1F5AFF;
+    --color-square--provider: red;
+    --transition-time: 1s;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E1E1E;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.square1{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+
+    margin: 1rem;
+    border: none;
+    text-align: center;
+    transition: var(--transition-time);
+}
+
+.square1::before {
+    position: absolute;
+    width: 5rem;
+    height: 11rem;
+    content: "";
+    transition: var(--transition-time);
+}
+.square1::after {
+    position: absolute;
+    width: 12.5rem;
+    height: 5rem;
+    content: "";
+    transition: var(--transition-time);
+}
+
+.square1::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-left: var(--size-border) solid var(--color-square);
+    border-top: var(--size-border) solid var(--color-square);
+    transition: var(--transition-time);
+}
+
+.square1::after{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-right: var(--size-border) solid var(--color-square);
+    border-bottom: var(--size-border) solid var(--color-square);
+    transition: var(--transition-time);
+}
+
+/* SQUARE 2, Segundo quadrado */
+
+.square2{
+    position: absolute;
+    width: 15rem;
+    height: 15.5rem;
+
+    margin: 1rem;
+    border: none;
+    text-align: center;
+    transition: var(--transition-time);
+}
+
+.square2::before {
+    position: absolute;
+    width: 5rem;
+    height: 0rem;
+    content: "";
+    transition: var(--transition-time);
+}
+.square2::after {
+    position: absolute;
+    width: 0rem;
+    height: 5rem;
+    content: "";
+    transition: var(--transition-time);
+}
+
+.square2::before{
+    position: absolute;
+    left: 7.5rem;
+    top: 0.25rem;
+    border-left: var(--size-border) solid var(--color-square);
+    border-top: var(--size-border) solid var(--color-square);
+    transition: var(--transition-time);
+}
+
+.square2::after {
+    position: absolute;
+    right: 0rem;
+    bottom: 7.75rem;
+    border-right: var(--size-border) solid var(--color-square);
+    border-bottom: var(--size-border) solid var(--color-square);
+    transition: var(--transition-time);
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+/* SQUARE 1, Primeiro quadrado */
+.square1--pos{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+
+    margin: 1rem;
+    border: none;
+    text-align: center;
+    transition: var(--transition-time);
+}
+
+.square1--pos::before {
+    position: absolute;
+    width: 5rem;
+    height: 11rem;
+    content: "";
+    transition: var(--transition-time);
+}
+.square1--pos::after {
+    position: absolute;
+    width: 12.5rem;
+    height: 5rem;
+    content: "";
+    transition: var(--transition-time);
+}
+
+.square1--pos::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-left: var(--size-border) solid var(--color-square);
+    border-top: var(--size-border) solid var(--color-square);
+    transition: var(--transition-time);
+}
+
+.square1--pos::after{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-right: var(--size-border) solid var(--color-square);
+    border-bottom: var(--size-border) solid var(--color-square);
+    transition: var(--transition-time);
+}
+
+/* SQUARE 2, Segundo quadrado */
+
+.square2--pos{
+    position: absolute;
+    width: 15rem;
+    height: 15.5rem;
+
+    margin: 1rem;
+    border: none;
+    text-align: center;
+    transition: var(--transition-time);
+}
+
+.square2--pos::before {
+    position: absolute;
+    width: 7.5rem;
+    height: 0rem;
+    content: "";
+    transition: var(--transition-time);
+}
+.square2--pos::after {
+    position: absolute;
+    width: 0rem;
+    height: 5.2rem;
+    content: "";
+    transition: var(--transition-time);
+}
+
+.square2--pos::before{
+    position: absolute;
+    left: 7.5rem;
+    top: -2.25rem;
+    border-left: var(--size-border) solid var(--color-square);
+    border-top: var(--size-border) solid var(--color-square);
+    transition: var(--transition-time);
+}
+
+.square2--pos::after {
+    position: absolute;
+    right: -2.5rem;
+    bottom: 7.75rem;
+    border-right: var(--size-border) solid var(--color-square);
+    border-bottom: var(--size-border) solid var(--color-square);
+    transition: var(--transition-time);
+} 
